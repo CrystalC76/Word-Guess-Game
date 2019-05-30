@@ -6,58 +6,75 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Animal Hang-man</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 </head>
 
-<body>
+<body class="bg-dark">
 
-    <div class="containter">
+    <div class="containter text-warning font-weight-bold ">
 
         <div class="row">
             <!-- Insert game title here.  either h1 or image. -->
+            <img src="assets/images/TITLE.png" class="img-fluid rounded mx-auto w-50 h-50" alt="Guess The Animal!">
         </div>
 
         <div class="row">
             <!-- Hide this until they win, then show Answer -->
-            <h1>
+            <h1 id="answer">
                 <!-- Answer -->
             </h1>
         </div>
 
-        <div class="row">
+        <div class="row d-flex flex-wrap align-items-center">
 
-            <div class="col">
-                <!-- place starting image.  change to winning image if win. -->
+            <div class="col-4 offset-2 border border-warning text-center">
+                <!-- place starting image.  change to winning image if win. ????HOW -->
+                <img id="wordImage" src="assets/images/hangman.jpg" class="img-fluid rounded mx-auto w-50 h-50" alt="">
             </div>
 
-            <div class="col">
+            <div class="col-4 border border-warning text-center">
+
                 <!-- sub row for directions -->
                 <div class="row">
-
+                    <p>Start by guessing a letter!</p>
                 </div>
-                <!-- sub row for wins -->
+
+                <!-- sub row for number of wins text -->
                 <div class="row">
+                    <p>Number of Wins:</p>
+                </div>
+
+                <!-- sub row for wins -->
+                <div class="row" id="wins">
 
                 </div>
+
                 <!-- sub row for current word -->
                 <div class="row">
-
+                    <p>Current Word:</p>
                 </div>
-                <!-- sub row for dashes for # of letters -->
+
+                <!-- sub row for dashes for # of letters/letter guessed -->
                 <div class="row">
 
                 </div>
+
                 <!-- sub row for words: number of guesses remaining -->
                 <div class="row">
-
+                    <p>Guesses remaining:</p>
                 </div>
+
                 <!-- sub row for that number -->
                 <div class="row">
 
                 </div>
+
                 <!-- sub row for words: letters already guessed -->
                 <div class="row">
-
+                    <p> Letters already guessed:</p>
                 </div>
+
                 <!-- sub row for those letters -->
                 <div class="row">
 
